@@ -31,6 +31,7 @@ TOH.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
 TOH.BorderSizePixel = 0
 TOH.Position = UDim2.new(-1.49899995, 0, 0.0399999991, 0)
 TOH.Size = UDim2.new(0, 544, 0, 420)
+TOH.Visible = false
 
 Bar.Name = "Bar"
 Bar.Parent = TOH
@@ -199,7 +200,7 @@ TextButton_4.TextWrapped = true
 
 -- Scripts:
 
-local function DGTL_fake_script() -- TextButton.Script 
+local function FUYKP_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	-- put this inside close with a localscript
@@ -208,8 +209,8 @@ local function DGTL_fake_script() -- TextButton.Script
 		script.Parent.Parent:TweenSize(UDim2.new(0,0,0,0),"In","Linear",0.3,false,nil)
 	end)
 end
-coroutine.wrap(DGTL_fake_script)()
-local function ZDCH_fake_script() -- TextButton_2.Script 
+coroutine.wrap(FUYKP_fake_script)()
+local function YLAER_fake_script() -- TextButton_2.Script 
 	local script = Instance.new('Script', TextButton_2)
 
 	-- put this in minimize as a localscript
@@ -232,8 +233,8 @@ local function ZDCH_fake_script() -- TextButton_2.Script
 		print(old)
 	end)
 end
-coroutine.wrap(ZDCH_fake_script)()
-local function DBLUNTN_fake_script() -- God.Script 
+coroutine.wrap(YLAER_fake_script)()
+local function DRVI_fake_script() -- God.Script 
 	local script = Instance.new('Script', God)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -268,8 +269,8 @@ local function DBLUNTN_fake_script() -- God.Script
 		end
 	end)
 end
-coroutine.wrap(DBLUNTN_fake_script)()
-local function UEEF_fake_script() -- Antiban.Script 
+coroutine.wrap(DRVI_fake_script)()
+local function WHPPBA_fake_script() -- Antiban.Script 
 	local script = Instance.new('Script', Antiban)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -308,8 +309,8 @@ local function UEEF_fake_script() -- Antiban.Script
 		end
 	end)
 end
-coroutine.wrap(UEEF_fake_script)()
-local function WDXTRZ_fake_script() -- TpEnd.Script 
+coroutine.wrap(WHPPBA_fake_script)()
+local function FLHVLY_fake_script() -- TpEnd.Script 
 	local script = Instance.new('Script', TpEnd)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -337,8 +338,8 @@ local function WDXTRZ_fake_script() -- TpEnd.Script
 			tptopart(part)
 		end)
 end
-coroutine.wrap(WDXTRZ_fake_script)()
-local function NUVOFSH_fake_script() -- Giver.Script 
+coroutine.wrap(FLHVLY_fake_script)()
+local function CHSJC_fake_script() -- Giver.Script 
 	local script = Instance.new('Script', Giver)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -392,8 +393,8 @@ local function NUVOFSH_fake_script() -- Giver.Script
 	
 		end)
 end
-coroutine.wrap(NUVOFSH_fake_script)()
-local function UUPNNU_fake_script() -- ProTowers.Script 
+coroutine.wrap(CHSJC_fake_script)()
+local function ORCQXQE_fake_script() -- ProTowers.Script 
 	local script = Instance.new('Script', ProTowers)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -421,8 +422,8 @@ local function UUPNNU_fake_script() -- ProTowers.Script
 		tptopart(part)
 	end)
 end
-coroutine.wrap(UUPNNU_fake_script)()
-local function DAVJH_fake_script() -- TextButton_3.Script 
+coroutine.wrap(ORCQXQE_fake_script)()
+local function TCSUD_fake_script() -- TextButton_3.Script 
 	local script = Instance.new('Script', TextButton_3)
 
 	-- put this inside the button as a localscript
@@ -440,8 +441,8 @@ local function DAVJH_fake_script() -- TextButton_3.Script
 		script.Parent.Parent.Parent.Parent.Parent.TOH:TweenPosition(UDim2.new(2.499, 0,0.1, 0),nil, nil, 1.5)
 	end)
 end
-coroutine.wrap(DAVJH_fake_script)()
-local function RJDIKF_fake_script() -- TextButton_4.Script 
+coroutine.wrap(TCSUD_fake_script)()
+local function ARRAUTD_fake_script() -- TextButton_4.Script 
 	local script = Instance.new('Script', TextButton_4)
 
 	-- put this inside the button as a localscript
@@ -459,5 +460,14 @@ local function RJDIKF_fake_script() -- TextButton_4.Script
 		script.Parent.Parent.Parent.Parent.Parent.TOH:TweenPosition(UDim2.new(2.499, 0,0.1, 0),nil, nil, 1.5)
 	end)
 end
-coroutine.wrap(RJDIKF_fake_script)()
+coroutine.wrap(ARRAUTD_fake_script)()
+local function UDGMQ_fake_script() -- TOH.Script 
+	local script = Instance.new('Script', TOH)
 
+	while wait() do
+		if script.Parent.Parent.TOH.Visible == true then
+			script.Parent.Parent.TOH:TweenPosition(UDim2.new(0.499, 0,0.04, 0))
+		end
+	end
+end
+coroutine.wrap(UDGMQ_fake_script)()
