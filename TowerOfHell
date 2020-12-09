@@ -1,1 +1,463 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local TOH = Instance.new("Frame")
+local Bar = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local UIPadding = Instance.new("UIPadding")
+local UIGridLayout = Instance.new("UIGridLayout")
+local God = Instance.new("TextButton")
+local Antiban = Instance.new("TextButton")
+local TpEnd = Instance.new("TextButton")
+local Giver = Instance.new("TextButton")
+local ProTowers = Instance.new("TextButton")
+local ScrollingBar = Instance.new("ScrollingFrame")
+local Frame_2 = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+
+--Properties:
+
+TOH.Name = "TOH"
+TOH.Parent = game.StarterGui.Killer
+TOH.AnchorPoint = Vector2.new(0.5, 0)
+TOH.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+TOH.BorderSizePixel = 0
+TOH.Position = UDim2.new(-1.49899995, 0, 0.0399999991, 0)
+TOH.Size = UDim2.new(0, 544, 0, 420)
+
+Bar.Name = "Bar"
+Bar.Parent = TOH
+Bar.AnchorPoint = Vector2.new(0.5, 0)
+Bar.BackgroundColor3 = Color3.fromRGB(84, 84, 84)
+Bar.BorderSizePixel = 0
+Bar.Position = UDim2.new(0.500279069, 0, -0.000854383223, 0)
+Bar.Size = UDim2.new(0, 544, 0, 66)
+
+TextLabel.Parent = Bar
+TextLabel.AnchorPoint = Vector2.new(0.5, 0)
+TextLabel.BackgroundColor3 = Color3.fromRGB(111, 111, 111)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.499817461, 0, 0.121212125, 0)
+TextLabel.Size = UDim2.new(0, 543, 0, 50)
+TextLabel.Font = Enum.Font.PatrickHand
+TextLabel.Text = "Killer Hub"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextButton.Parent = TOH
+TextButton.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+TextButton.BackgroundTransparency = -0.020
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.897058845, 0, 0.0181932356, 0)
+TextButton.Size = UDim2.new(0, 55, 0, 50)
+TextButton.AutoButtonColor = false
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(89, 89, 89)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+TextButton_2.Parent = TOH
+TextButton_2.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+TextButton_2.BackgroundTransparency = -0.020
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.795955896, 0, 0.0181932356, 0)
+TextButton_2.Size = UDim2.new(0, 55, 0, 50)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "-"
+TextButton_2.TextColor3 = Color3.fromRGB(89, 89, 89)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+
+Frame.Parent = TOH
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.257353008, 0, 0.188095272, 0)
+Frame.Size = UDim2.new(0, 404, 0, 341)
+
+UIPadding.Parent = Frame
+UIPadding.PaddingRight = UDim.new(0, 5)
+
+UIGridLayout.Parent = Frame
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+God.Name = "God"
+God.Parent = Frame
+God.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+God.BorderSizePixel = 0
+God.Position = UDim2.new(0.450367659, 0, 0.233333334, 0)
+God.Size = UDim2.new(0, 109, 0, 50)
+God.Font = Enum.Font.Roboto
+God.Text = "Godmode"
+God.TextColor3 = Color3.fromRGB(255, 255, 255)
+God.TextScaled = true
+God.TextSize = 14.000
+God.TextWrapped = true
+
+Antiban.Name = "Antiban"
+Antiban.Parent = Frame
+Antiban.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+Antiban.BorderSizePixel = 0
+Antiban.Position = UDim2.new(0.450367659, 0, 0.233333334, 0)
+Antiban.Size = UDim2.new(0, 109, 0, 50)
+Antiban.Font = Enum.Font.Roboto
+Antiban.Text = "Anti cheat bypass"
+Antiban.TextColor3 = Color3.fromRGB(255, 255, 255)
+Antiban.TextScaled = true
+Antiban.TextSize = 14.000
+Antiban.TextWrapped = true
+
+TpEnd.Name = "TpEnd"
+TpEnd.Parent = Frame
+TpEnd.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+TpEnd.BorderSizePixel = 0
+TpEnd.Position = UDim2.new(0.450367659, 0, 0.233333334, 0)
+TpEnd.Size = UDim2.new(0, 109, 0, 50)
+TpEnd.Font = Enum.Font.Roboto
+TpEnd.Text = "TP to end"
+TpEnd.TextColor3 = Color3.fromRGB(255, 255, 255)
+TpEnd.TextScaled = true
+TpEnd.TextSize = 14.000
+TpEnd.TextWrapped = true
+
+Giver.Name = "Giver"
+Giver.Parent = Frame
+Giver.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+Giver.BorderSizePixel = 0
+Giver.Position = UDim2.new(0.450367659, 0, 0.233333334, 0)
+Giver.Size = UDim2.new(0, 109, 0, 50)
+Giver.Font = Enum.Font.Roboto
+Giver.Text = "Give all gears"
+Giver.TextColor3 = Color3.fromRGB(255, 255, 255)
+Giver.TextScaled = true
+Giver.TextSize = 14.000
+Giver.TextWrapped = true
+
+ProTowers.Name = "ProTowers"
+ProTowers.Parent = Frame
+ProTowers.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+ProTowers.BorderSizePixel = 0
+ProTowers.Position = UDim2.new(0.450367659, 0, 0.233333334, 0)
+ProTowers.Size = UDim2.new(0, 109, 0, 50)
+ProTowers.Font = Enum.Font.Roboto
+ProTowers.Text = "TP to pro towers"
+ProTowers.TextColor3 = Color3.fromRGB(255, 255, 255)
+ProTowers.TextScaled = true
+ProTowers.TextSize = 14.000
+ProTowers.TextWrapped = true
+
+ScrollingBar.Name = "ScrollingBar"
+ScrollingBar.Parent = TOH
+ScrollingBar.Active = true
+ScrollingBar.BackgroundColor3 = Color3.fromRGB(84, 84, 84)
+ScrollingBar.BorderSizePixel = 0
+ScrollingBar.Position = UDim2.new(0, 0, 0.157142863, 0)
+ScrollingBar.Size = UDim2.new(0, 126, 0, 354)
+
+Frame_2.Parent = ScrollingBar
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BackgroundTransparency = 1.000
+Frame_2.Position = UDim2.new(0, 0, 0.0385852084, 0)
+Frame_2.Size = UDim2.new(0, 126, 0, 299)
+
+UIListLayout.Parent = Frame_2
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 5)
+
+TextButton_3.Parent = Frame_2
+TextButton_3.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Size = UDim2.new(0, 109, 0, 50)
+TextButton_3.Font = Enum.Font.Roboto
+TextButton_3.Text = "Settings"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+
+TextButton_4.Parent = Frame_2
+TextButton_4.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Size = UDim2.new(0, 109, 0, 50)
+TextButton_4.Font = Enum.Font.Roboto
+TextButton_4.Text = "Functions"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14.000
+TextButton_4.TextWrapped = true
+
+-- Scripts:
+
+local function DGTL_fake_script() -- TextButton.Script 
+	local script = Instance.new('Script', TextButton)
+
+	-- put this inside close with a localscript
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.ClipsDescendants = true
+		script.Parent.Parent:TweenSize(UDim2.new(0,0,0,0),"In","Linear",0.3,false,nil)
+	end)
+end
+coroutine.wrap(DGTL_fake_script)()
+local function ZDCH_fake_script() -- TextButton_2.Script 
+	local script = Instance.new('Script', TextButton_2)
+
+	-- put this in minimize as a localscript
+	local on = false
+	local old 
+	script.Parent.MouseButton1Click:Connect(function()
+	
+	
+		if on == false then
+			on = true
+			old = script.Parent.Parent.Position
+			script.Parent.Parent:TweenPosition(UDim2.new(0.519, 0,0.94, 0),"Out","Linear",0.3,false,nil)
+			game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.3), {Rotation = 180}):Play()
+	
+		else
+			on = false
+			script.Parent.Parent:TweenPosition(old,"Out","Linear",0.3,false,nil)
+			game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.3), {Rotation = 0}):Play()
+		end
+		print(old)
+	end)
+end
+coroutine.wrap(ZDCH_fake_script)()
+local function DBLUNTN_fake_script() -- God.Script 
+	local script = Instance.new('Script', God)
+
+	script.Parent.MouseEnter:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(26, 30, 68)}):Play()
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(77, 77, 77)}):Play()
+	end)
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		while wait() do
+			while wait() do
+				-- God Mode script
+				-- Defining Variables
+				-- Uwu
+	
+				local Player = game.Players.LocalPlayer
+				local PlayerScripts = Player.PlayerScripts
+	
+				local KillScript = Player.Character.KillScript
+	
+				-- Disabling it
+	
+				for i,v in pairs(getconnections(KillScript.Changed)) do
+					v:Disable()
+				end
+	
+				-- Removing it
+	
+				KillScript:Remove()
+			end
+		end
+	end)
+end
+coroutine.wrap(DBLUNTN_fake_script)()
+local function UEEF_fake_script() -- Antiban.Script 
+	local script = Instance.new('Script', Antiban)
+
+	script.Parent.MouseEnter:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(26, 30, 68)}):Play()
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(77, 77, 77)}):Play()
+	end)
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		while wait() do
+			-- Disable anticheat
+			-- Defining the Variables
+			-- SantaTraked :3
+	
+			local Player = game.Players.LocalPlayer
+			local PlayerScripts = Player.PlayerScripts
+	
+			local Anti1 = PlayerScripts.LocalScript
+			local Anti2 = PlayerScripts.LocalScript2
+	
+			-- Disabling the AntiCheat
+	
+			for i,v in pairs(getconnections(Anti1.Changed)) do
+				v:Disable()
+			end
+	
+			for i,v in pairs(getconnections(Anti2.Changed)) do
+				v:Disable()
+			end
+	
+			-- Removing the Anticheat COMPLETELY
+	
+			Anti1:Remove()
+			Anti2:Remove()
+		end
+	end)
+end
+coroutine.wrap(UEEF_fake_script)()
+local function WDXTRZ_fake_script() -- TpEnd.Script 
+	local script = Instance.new('Script', TpEnd)
+
+	script.Parent.MouseEnter:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(26, 30, 68)}):Play()
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(77, 77, 77)}):Play()
+	end)
+	
+	script.Parent.MouseButton1Down:Connect(function()
+			local plr = game.Players.LocalPlayer
+			local char = plr.Character or plr.CharacterAdded:Wait() -- gets the character, or waits until it exists.
+	
+			local function tptopart(part)
+				local hrp = char:FindFirstChild('HumanoidRootPart') -- get the HumanoidRootPart, which is the main part of the character that controls it's position and CFrame.
+				if not hrp then return end -- if they don't have a HumanoidRootPart, cancel the function.
+				for i = 0,1,0.01 do
+					hrp.CFrame = hrp.CFrame:Lerp(part.CFrame,i)
+					game:GetService('RunService').RenderStepped:Wait()
+				end
+			end
+	
+			-- Example of how to use:
+			local part = workspace.tower.sections.finish.FinishGlow
+			tptopart(part)
+		end)
+end
+coroutine.wrap(WDXTRZ_fake_script)()
+local function NUVOFSH_fake_script() -- Giver.Script 
+	local script = Instance.new('Script', Giver)
+
+	script.Parent.MouseEnter:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(26, 30, 68)}):Play()
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(77, 77, 77)}):Play()
+	end)
+	
+	script.Parent.MouseButton1Down:Connect(function()
+			-- Defining general Variables
+	
+			local ReplicatedStorage = game.ReplicatedStorage
+			local Gear = ReplicatedStorage.Gear
+			local Players = game.Players
+			local LocalPlayer = Players.LocalPlayer
+			local Backpack = LocalPlayer.Backpack
+	
+			-- Defining tool Variables
+	
+			local SpeedCoil = Gear.speed
+			local Trowel = Gear.trowel
+			local Fusion = Gear.fusion
+			local Gravity = Gear.gravity
+			local JumpCoil = Gear.jump
+			local Grapple = Gear.hook
+			local HourGlass = Gear.hourglass
+			local Bomb = Gear.bomb
+	
+			-- Defining clone Variables
+	
+			local SpeedCoilClone = SpeedCoil:Clone()
+			local TrowelClone = Trowel:Clone()
+			local FusionClone = Fusion:Clone()
+			local GravityClone = Gravity:Clone()
+			local JumpCoilClone = JumpCoil:Clone()
+			local GrappleClone = Grapple:Clone()
+			local HourGlassClone = HourGlass:Clone()
+			local BombClone = Bomb:Clone()
+	
+			-- Giving the tools
+	
+			SpeedCoilClone.Parent = Backpack
+			TrowelClone.Parent = Backpack
+			FusionClone.Parent = Backpack
+			GravityClone.Parent = Backpack
+			JumpCoilClone.Parent = Backpack
+			GrappleClone.Parent = Backpack
+			HourGlassClone.Parent = Backpack
+			BombClone.Parent = Backpack
+	
+		end)
+end
+coroutine.wrap(NUVOFSH_fake_script)()
+local function UUPNNU_fake_script() -- ProTowers.Script 
+	local script = Instance.new('Script', ProTowers)
+
+	script.Parent.MouseEnter:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(26, 30, 68)}):Play()
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(77, 77, 77)}):Play()
+	end)
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		local plr = game.Players.LocalPlayer
+		local char = plr.Character or plr.CharacterAdded:Wait() -- gets the character, or waits until it exists.
+	
+		local function tptopart(part)
+			local hrp = char:FindFirstChild('HumanoidRootPart') -- get the HumanoidRootPart, which is the main part of the character that controls it's position and CFrame.
+			if not hrp then return end -- if they don't have a HumanoidRootPart, cancel the function.
+			for i = 0,1,0.01 do
+				hrp.CFrame = hrp.CFrame:Lerp(part.CFrame,i)
+				game:GetService('RunService').RenderStepped:Wait()
+			end
+		end
+	
+		-- Example of how to use:
+		local part = workspace.tower.sections.start.gate.gate
+		tptopart(part)
+	end)
+end
+coroutine.wrap(UUPNNU_fake_script)()
+local function DAVJH_fake_script() -- TextButton_3.Script 
+	local script = Instance.new('Script', TextButton_3)
+
+	-- put this inside the button as a localscript
+	-- also change the colors to whatever you chose.. these are my colors
+	script.Parent.MouseEnter:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(26, 30, 68)}):Play()
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(77, 77, 77)}):Play()
+	end)
+	script.Parent.MouseButton1Down:Connect(function()
+	
+		script.Parent.Parent.Parent.Parent.Parent.Settings:TweenPosition(UDim2.new(0.499, 0,0.1, 0), nil, nil, 1.5)
+		wait()
+		script.Parent.Parent.Parent.Parent.Parent.TOH:TweenPosition(UDim2.new(2.499, 0,0.1, 0),nil, nil, 1.5)
+	end)
+end
+coroutine.wrap(DAVJH_fake_script)()
+local function RJDIKF_fake_script() -- TextButton_4.Script 
+	local script = Instance.new('Script', TextButton_4)
+
+	-- put this inside the button as a localscript
+	-- also change the colors to whatever you chose.. these are my colors
+	script.Parent.MouseEnter:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(26, 30, 68)}):Play()
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(77, 77, 77)}):Play()
+	end)
+	script.Parent.MouseButton1Down:Connect(function()
+	
+		script.Parent.Parent.Parent.Parent.Parent.Functions:TweenPosition(UDim2.new(0.499, 0,0.1, 0), nil, nil, 1.5)
+		wait()
+		script.Parent.Parent.Parent.Parent.Parent.TOH:TweenPosition(UDim2.new(2.499, 0,0.1, 0),nil, nil, 1.5)
+	end)
+end
+coroutine.wrap(RJDIKF_fake_script)()
 
